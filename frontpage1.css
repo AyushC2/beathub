@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Eczar&family=Poppins:wght@100;200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.text{
+    color: #fff;
+    position: absolute;
+    bottom: 30%;
+    margin: 20px;
+}
+.text h1{
+    font-size: 190px;
+    line-height: 150px;
+    margin-left: 5px;
+    font-family: "Poppins",sans-serif;
+    font-weight: 350;
+}
+.row{
+    display:flex ;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+.row a{
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 20px;
+    border: 1px solid #fff;
+    border-radius: 32px;
+    display: flex;
+    align-items: center;
+    transition: .5s;
+}
+.row a span{
+    font-size: 30px;
+    line-height: 15px;
+    margin-left: 5px;
+}
+.text h3{
+    letter-spacing: 3px;
+    font-family: "Poppins",sans-serif ;
+    margin-left: 18px;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Eczar&family=Poppins:wght@100;200&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.show{
+    position: relative;
+    height:100vh ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px ;
+}
+.video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.main
+{   position: absolute;
+    top:50%;
+    left: 80%;
+    width: 400px;
+    padding: 40px;
+    transform: translate(-50%,-50%);
+    background-color: rgba(0, 0, 0, 0.169);
+    box-sizing: border-box;
+    box-shadow: 0 15PX 25PX rgba(0, 0,0, 0.6);
+    border-radius: 10px;
+}
+.main
+ h2{
+    margin: 0 0 30px;
+    padding: 0;
+    color: #FFF;
+    text-align: center;
+}
+.main
+ .name{
+    position: relative;
+}
+.main
+ .name input{
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom:1px solid #fff ;
+    outline: none ;
+    background-color: transparent;
+}
+.main
+ .name labeL{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #FFF;
+    pointer-events: none;
+    transition: .5s;
+}
+.main
+ .name  input:focus ~ label,.main
+ .name  input:valid ~ label{
+    top: -20PX;
+    left: 0;
+    color:#fff;
+    font-size: 12PX;
+    font-weight: 400;
+}
+.main
+ form button {
+    position: relative;
+    display: inline-block;
+    padding: 8px ;
+    color: #FFF;
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 20px;
+    letter-spacing: 4px;
+    background-color: transparent;
+    border: none;
+}
+.main
+ form button:hover{
+    background-color: #333335;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #fff,
+    0 0 5px #fff,
+    0 0 25px #fff,
+    0 0 100px #fff;
+}
+
+.main
+ h4{
+    margin: 0 0 30px;
+    padding: 0;
+    color: #FFF;
+    text-align: center;
+}
+.class {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar {
+    position: absolute;
+    bottom: 90%;
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.navbar ul {
+    list-style: none;
+    justify-content: space-between;
+    display: flex;
+    margin-right: 100px;
+}
+.navbar li {
+    margin: 10px;
+
+}
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bolder;
+    padding-left: 10px;
+    margin-left: 70px;
+}
+.navbar img {
+    width: 70px;
+    margin-left: 10px;
+    size: 200PX;
+}
+.navbar ul li:hover{
+    filter: drop-shadow(4px 3px 3px #fff);
+    transform: scale(1.1);
+}
+.text h1:hover{
+    filter: drop-shadow(10px 10px 10px #000);
+    font-family: 'Poppins';
+}
+.navbar H2{
+    color: #FFF;
+    font-size: 15PX;
+    margin-left: 50PX;
+}
+.text H2 span:hover{
+    filter: drop-shadow(4px 3px 3px #000);
+}
+.main  a h5{
+    text-decoration: none;
+}
+.text .row a:hover{
+background-color: #fff;
+color: #000;
+border-radius: 32px;
+}

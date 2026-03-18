@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playlist</title>
+    <link rel="stylesheet" href="try.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+
+        <div class="song">
+
+            <div class="item" style="background-image: url(images/open.png);">
+                <div class="content">
+                    <div class="name">Happy Hours</div> 
+                    <div class="artist">Talha Anjum</div>
+                    <img onclick="play1()" id="img1" src="images/play.png">
+                    <audio id="song1">
+                        <source src="images/Happy Hour.m4a">
+                    </audio>
+                </div>
+            </div>"
+            <div class="item" style="background-image: url(images/My\ eyes.png);">
+                <div class="content">
+                    <div class="name">My Eyes</div>
+                    <div class="artist">Travis Scott</div>
+                    <img onclick="play2()" id="img2" src="images/play.png">
+                    <audio id="song2">
+                        <source src="images/my eyes.m4a">
+                    </audio>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(images/Bachke\ Bachke.png)">
+                <div class="content">
+                    <div class="name">Bachke Bachke</div>
+                    <div class="artist">Karan Aujla</div>
+                    <img onclick="play3()" id="img3" src="images/play.png">
+                    <audio id="song3">
+                        <source src="images/bachke Bachke.m4a">
+                    </audio>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(images/Softly.png);">
+                <div class="content">
+                    <div class="name">Softly</div>
+                    <div class="artist">Karan Aujla</div>
+                    <img onclick="play4()" id="img4" src="images/play.png">
+                    <audio id="song4">
+                        <source src="images/Softly.m4a">
+                    </audio>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(images/Jaytrack.png);">
+                <div class="content">
+                    <div class="name">9:45</div>
+                    <div class="artist">Prabh feat.JayTrack</div>
+                    <img onclick="play5()" id="img5" src="images/play.png">
+                    <audio id="song5">
+                        <source src="images/945.m4a">
+                    </audio>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(images/Duniya.png);">
+                <div class="content">
+                    <div class="name">Duniya Makkaar</div>
+                    <div class="artist">KARMA</div>
+                    <img onclick="play6()" id="img6" src="images/play.png">
+                    <audio id="song6">
+                        <source src="images/Duniya Makkar.m4a">
+                    </audio>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(images/me\ and\ you.png);">
+                <div class="content">
+                    <div class="name">Me & You</div>
+                    <div class="artist">Talha Anjum, Talhah Yunus and Jokhay</div>
+                    <img onclick="play7()" id="img7" src="images/play.png">
+                    <audio id="song7">
+                        <source src="images/Me and You.m4a">
+                    </audio>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(images/mera\ bina.png);">
+                <div class="content">
+                    <div class="name">Mera Bina</div>
+                    <div class="artist">Talha Anjum, KSHMR</div>
+                    <img onclick="play8()" id="img8" src="images/play.png">
+                    <audio id="song8">
+                        <source src="images/Mera Bina.m4a">
+                    </audio>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(images/GUESS.png)">
+                <div class="content">
+                    <div class="name">I GUESS</div>
+                    <div class="artist">KR$NA</div>
+                    <img onclick="play9()" id="img9" src="images/play.png">
+                    <audio id="song9">
+                        <source src="images/">
+                    </audio>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="button">
+            <button class="prev"><i class="fa-solid fa-arrow-left"></i></button>
+            <button class="next"><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+
+    </div>
+    
+    <script>
+        let next = document.querySelector('.next')
+let prev = document.querySelector('.prev')
+
+next.addEventListener('click', function(){
+    let items = document.querySelectorAll('.item')
+    document.querySelector('.song').appendChild(items[0])
+})
+
+prev.addEventListener('click', function(){
+    let items = document.querySelectorAll('.item')
+    document.querySelector('.song').prepend(items[items.length - 1]) 
+})
+    function play1() {
+        var a = document.getElementById("song1");
+        var b = document.getElementById("img1");
+        if (b.src.match("play")) {
+            b.src = "images/pause.png";
+            a.play();
+        }
+        else {
+            b.src = "images/play.png";
+            a.pause();
+        }
+
+    }
+    function play2() {
+        var a = document.getElementById("song2");
+        var b = document.getElementById("img2");
+        if (b.src.match("play")) {
+            b.src = "images/pause.png";
+            a.play();
+        }
+        else {
+            b.src = "images/play.png";
+            a.pause();
+        }
+
+    }
+    function play3() {
+        var a = document.getElementById("song3");
+        var b = document.getElementById("img3");
+        if (b.src.match("play")) {
+            b.src = "images/pause.png";
+            a.play();
+        }
+        else {
+            b.src = "images/play.png";
+            a.pause();
+        }
+
+    }
+    function play4() {
+        var a = document.getElementById("song4");
+        var b = document.getElementById("img4");
+        if (b.src.match("play")) {
+            b.src = "images/pause.png";
+            a.play();
+        }
+        else {
+            b.src = "images/play.png";
+            a.pause();
+        }
+
+    }
+    function play5() {
+        var a = document.getElementById("song5");
+        var b = document.getElementById("img5");
+        if (b.src.match("play")) {
+            b.src = "images/pause.png";
+            a.play();
+        }
+        else {
+            b.src = "images/play.png";
+            a.pause();
+        }
+
+    }
+    function play6() {
+        var a = document.getElementById("song6");
+        var b = document.getElementById("img6");
+        if (b.src.match("play")) {
+            b.src = "images/pause.png";
+            a.play();
+        }
+        else {
+            b.src = "images/play.png";
+            a.pause();
+        }
+
+    }
+    function play7() {
+        var a = document.getElementById("song7");
+        var b = document.getElementById("img7");
+        if (b.src.match("play")) {
+            b.src = "images/pause.png";
+            a.play();
+        }
+        else {
+            b.src = "images/play.png";
+            a.pause();
+        }
+
+    }
+    function play8() {
+        var a = document.getElementById("song8");
+        var b = document.getElementById("img8");
+        if (b.src.match("play")) {
+            b.src = "images/pause.png";
+            a.play();
+        }
+        else {
+            b.src = "images/play.png";
+            a.pause();
+        }
+
+    }
+    function play9() {
+        var a = document.getElementById("song9");
+        var b = document.getElementById("img9");
+        if (b.src.match("play")) {
+            b.src = "images/pause.png";
+            a.play();
+        }
+        else {
+            b.src = "images/play.png";
+            a.pause();
+        }
+
+    }
+    </script>
+</body>
+</html>

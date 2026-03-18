@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artist</title>
+    <link rel="stylesheet" href="artist.css">
+    <link href="https://fonts.googleapis.com/css2?family=Eczar&family=Poppins:wght@100;200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+
+        <div class="song">
+
+            <div class="item" style="background-image: url(images/open.png);">
+                <div class="content">
+                    <div class="name">Talha Anjum</div> 
+                    <div class="artist">Talha Anjum, born on October 3, 1996, is a rapper, songwriter, and lyricist. He is popularly known for being a member and co-founder of the hip-hop band, Young Stunners, along with Talhah Yunus</div>
+                   
+                </div>
+            </div>"
+            <div class="item" style="background-image: url(images/My\ eyes.png);">
+                <div class="content">
+                    <div class="name">Travis Scott</div>
+                    <div class="artist">Travis Scott, whose real name is Jacques Bermon Webster II, was born on April 30, 19911. He is a renowned American rapper, singer, songwriter, and record producer and achieved four number-one hits on the US Billboard Hot 100 chart.</div>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(images/Artist.jpeg)">
+                <div class="content">
+                    <div class="name">Karan Aujla</div>
+                    <div class="artist">Karan Aujla, born as Jaskaran Singh Aujla on January 18, 1997, is an Indian singer, rapper, and songwriter primarily associated with Punjabi music. He hails from Ghurala village in Ludhiana, Punjab, India.He released his debut song “Property of Punjab” as a lead artist in 20161. He gained mainstream popularity in 2018 with “Don’t Worry”, his first song to enter the UK Asian chart</div>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(images/pRABH.png);">
+                <div class="content">
+                    <div class="name">PRABH</div>
+                    <div class="artist">Prabhdeep Singh, better known by his stage name, Prabh Deep, is an Indian rapper, songwriter, and music producer.. Prabh Deep’s music is a blend of Punjabi Hip-Hop, Desi hip hop, and Underground music</div>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(images/Duniya.png);">
+                <div class="content">
+                    <div class="name">Karma</div>
+                    <div class="artist">Karma,real name is Vivek Arora, is a well-known Indian rapper, singer, music composer, and songwriter. He was born on October 12, 1995, in Dehradun, Uttarakhand, India. Karma is known for his songs such as “Karmasutra” (2019), “Rap Karte Hain” (2018), “Warm Up” (2019), “We Wake Up” (2018), “Main Wahi Hoon” (2019), and “Take Diss” (2019)</div>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(images/me\ and\ you.png);">
+                <div class="content">
+                    <div class="name">Jokhay</div>
+                    <div class="artist">Jokhay, whose real name is Umair Khan, is a music composer, producer, multi-instrumentalist, songwriter, and vocalist based in Karachi, Pakistan. He has been into music for a long time and has experimented with different genres of music at a very young age.</div>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(images/KSHMR.png);">
+                <div class="content">
+                    <div class="name">KSHMR</div>
+                    <div class="artist">Niles Hollowell-Dhar, known professionally as KSHMR , is an American musician, songwriter, DJ, record producer, former rapper, and singer. He was born on October 6, 1988, in Berkeley, California, U.S.A . His father is a Kashmiri Hindu who emigrated from India, while his mother is American.</div>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(images/KR$NA2.png)">
+                <div class="content">
+                    <div class="name">KR$NA</div>
+                    <div class="artist">Krishna Kaul, known as KR$NA and stylized as KR$NA, is an Indian rapper, songwriter, and music producer. He was born on October 4, 1987, in Delhi, India. He is one of the earliest rappers to emerge in the Indian hip hop scene in the mid-2000s.</div>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(images/KING.png)">
+                <div class="content">
+                    <div class="name">Talhah Yunus</div>
+                    <div class="artist">Talhah Yunus (born 21 October 1996) is a Pakistani rapper, filmmaker and musician. He graduated from the National College of Arts in filmmaking. He is a part of the hip hop duo Young Stunners along with Talha Anjum, having the music producer Jokhay. He was born and raised in Karachi. He appeared in the PSL Anthem of 2021 "Groove Mera"</div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="button">
+            <button class="prev"><i class="fa-solid fa-arrow-left"></i></button>
+            <button class="next"><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+        <script>
+        let next = document.querySelector('.next')
+let prev = document.querySelector('.prev')
+
+next.addEventListener('click', function(){
+    let items = document.querySelectorAll('.item')
+    document.querySelector('.song').appendChild(items[0])
+})
+
+prev.addEventListener('click', function(){
+    let items = document.querySelectorAll('.item')
+    document.querySelector('.song').prepend(items[items.length - 1]) // here the length of items = 6
+})
+</script>
+</body>
+</html>

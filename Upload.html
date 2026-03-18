@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recently Uploaded</title>
+    <link rel="stylesheet" href="upload.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+
+        <div class="song">
+
+            <div class="item" style="background-image: url(images/ONLINE1.png);">
+                <div class="content">
+                    <div class="name">ONLINE</div> 
+                    <div class="artist">KARMA</div>
+                    <img onclick="play1()" id="img1" src="images/play.png">
+                    <audio id="song1">
+                        <source src="images/ONLINE.m4a">
+                    </audio>
+                </div>
+            </div>"
+            <div class="item" style="background-image: url(images/RAINDROPS.png);">
+                <div class="content">
+                    <div class="name">RAINDROPS</div>
+                    <div class="artist">METRO BOOMIN, TRAVIS SCOTT</div>
+                    <img onclick="play2()" id="img2" src="images/play.png">
+                    <audio id="song2">
+                        <source src="images/RAINDROPS.m4a">
+                    </audio>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(images/WOHRAAT.png)">
+                <div class="content">
+                    <div class="name">WOH RAAT</div>
+                    <div class="artist">KR$NA, RAFTAAR</div>
+                    <img onclick="play3()" id="img3" src="images/play.png">
+                    <audio id="song3">
+                        <source src="images/WOHRAAT.m4a">
+                    </audio>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(images/CHAMPIONS.png);">
+                <div class="content">
+                    <div class="name">CHAMPIONS</div>
+                    <div class="artist">Karan Aujla</div>
+                    <img onclick="play4()" id="img4" src="images/play.png">
+                    <audio id="song4">
+                        <source src="images/CHAMPIONS.m4a">
+                    </audio>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(images/AFTERHOURS.png);">
+                <div class="content">
+                    <div class="name">AFTERHOURS</div>
+                    <div class="artist">BIR</div>
+                    <img onclick="play5()" id="img5" src="images/play.png">
+                    <audio id="song5">
+                        <source src="images/AFTERHOURS.m4a">
+                    </audio>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(images/WIFEYOU.png);">
+                <div class="content">
+                    <div class="name">WIFE You</div>
+                    <div class="artist">TALHA ANJUM</div>
+                    <img onclick="play6()" id="img6" src="images/play.png">
+                    <audio id="song6">
+                        <source src="images/WIFE YOU.m4a">
+                    </audio>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(images/ONEMORE.png);">
+                <div class="content">
+                    <div class="name">ONE MORE NIGHT</div>
+                    <div class="artist">Shahreh, Talhah Yunus</div>
+                    <img onclick="play7()" id="img7" src="images/play.png">
+                    <audio id="song7">
+                        <source src="images/ONEMORE.m4a">
+                    </audio>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(images/IDMTL.png);">
+                <div class="content">
+                    <div class="name">I DON'T MISS THAT LIFE</div>
+                    <div class="artist">SEEDHE MAUT</div>
+                    <img onclick="play8()" id="img8" src="images/play.png">
+                    <audio id="song8">
+                        <source src="images/IDMTL.m4a">
+                    </audio>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(images/RUKH.png)">
+                <div class="content">
+                    <div class="name">RUKH</div>
+                    <div class="artist">NAVVEN SANDHU</div>
+                    <img onclick="play9()" id="img9" src="images/play.png">
+                    <audio id="song9">
+                        <source src="images/RUKH.mp3">
+                    </audio>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="button">
+            <button class="prev"><i class="fa-solid fa-arrow-left"></i></button>
+            <button class="next"><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+
+    </div>
+    
+    <script>
+        let next = document.querySelector('.next')
+let prev = document.querySelector('.prev')
+
+next.addEventListener('click', function(){
+    let items = document.querySelectorAll('.item')
+    document.querySelector('.song').appendChild(items[0])
+})
+
+prev.addEventListener('click', function(){
+    let items = document.querySelectorAll('.item')
+    document.querySelector('.song').prepend(items[items.length - 1]) // here the length of items = 6
+})
+    function play1() {
+        var a = document.getElementById("song1");
+        var b = document.getElementById("img1");
+        if (b.src.match("play")) {
+            b.src = "images/pause.png";
+            a.play();
+        }
+        else {
+            b.src = "images/play.png";
+            a.pause();
+        }
+
+    }
+    function play2() {
+        var a = document.getElementById("song2");
+        var b = document.getElementById("img2");
+        if (b.src.match("play")) {
+            b.src = "images/pause.png";
+            a.play();
+        }
+        else {
+            b.src = "images/play.png";
+            a.pause();
+        }
+
+    }
+    function play3() {
+        var a = document.getElementById("song3");
+        var b = document.getElementById("img3");
+        if (b.src.match("play")) {
+            b.src = "images/pause.png";
+            a.play();
+        }
+        else {
+            b.src = "images/play.png";
+            a.pause();
+        }
+
+    }
+    function play4() {
+        var a = document.getElementById("song4");
+        var b = document.getElementById("img4");
+        if (b.src.match("play")) {
+            b.src = "images/pause.png";
+            a.play();
+        }
+        else {
+            b.src = "images/play.png";
+            a.pause();
+        }
+
+    }
+    function play5() {
+        var a = document.getElementById("song5");
+        var b = document.getElementById("img5");
+        if (b.src.match("play")) {
+            b.src = "images/pause.png";
+            a.play();
+        }
+        else {
+            b.src = "images/play.png";
+            a.pause();
+        }
+
+    }
+    function play6() {
+        var a = document.getElementById("song6");
+        var b = document.getElementById("img6");
+        if (b.src.match("play")) {
+            b.src = "images/pause.png";
+            a.play();
+        }
+        else {
+            b.src = "images/play.png";
+            a.pause();
+        }
+
+    }
+    function play7() {
+        var a = document.getElementById("song7");
+        var b = document.getElementById("img7");
+        if (b.src.match("play")) {
+            b.src = "images/pause.png";
+            a.play();
+        }
+        else {
+            b.src = "images/play.png";
+            a.pause();
+        }
+
+    }
+    function play8() {
+        var a = document.getElementById("song8");
+        var b = document.getElementById("img8");
+        if (b.src.match("play")) {
+            b.src = "images/pause.png";
+            a.play();
+        }
+        else {
+            b.src = "images/play.png";
+            a.pause();
+        }
+
+    }
+    function play9() {
+        var a = document.getElementById("song9");
+        var b = document.getElementById("img9");
+        if (b.src.match("play")) {
+            b.src = "images/pause.png";
+            a.play();
+        }
+        else {
+            b.src = "images/play.png";
+            a.pause();
+        }
+
+    }
+    </script>
+</body>
+</html>

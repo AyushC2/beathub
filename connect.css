@@ -1,0 +1,207 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Eczar&family=Poppins:wght@100;200&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+.container{
+    min-height: 100vh;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(images/Softly.png) no-repeat center center/cover;
+}
+.container form{
+    width: 670px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 10px 20px 50px rgba(0,0,0,0.5);
+    border-radius: 32px;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    flex-wrap: wrap;
+}
+.container form h1{
+    color:#fff;
+    font-weight: 500;
+    margin-top: 20px;
+    width: 500px;
+    text-align: center;
+}
+.container form h1{
+    width: 290px;
+    height: 40px;
+    padding-left: 10px;
+    outline: none;
+}
+.container form input{
+    width: 290px;
+    height: 40px;
+    padding-left: 15px;
+    outline: none;
+    border: none;
+    font-size:15px;
+    background: none;
+    border-bottom: 2px solid #fff;
+}
+
+.container form input::placeholder{
+    color: #fff;
+}
+.container form #last,
+.container form #mobile{
+    margin-left: 20px;
+}
+.container form h4{
+    color: #fff;
+    font-weight: 300;
+    width: 600PX;
+    margin-top: 20px;
+}
+.container form  textarea{
+    background: none;
+    border: none;
+    border-bottom: 2px solid #fff;
+    color: #fff;
+    font-weight: 200;
+    font-size: 15px;
+    padding:10px;
+    outline: none;
+    min-width: 600px;
+    max-width: 600px;
+    min-height: 80px;
+    max-height: 80px;
+}
+.container form #button{
+    border: none;
+    background: transparent;
+    border-radius: 20px;
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #333;
+    width: 100px;
+    padding:0px;
+    margin-right: 500px;
+    margin-bottom: 30px;
+    transition: 0.3s;
+}
+.container form #button:hover{
+    background-color: black;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #fff,
+    0 0 5px #fff,
+    0 0 25px #fff,
+    0 0 100px #fff;
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Eczar&family=Poppins:wght@100;200&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.show{
+    position: relative;
+    height:100vh ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px ;
+}
+.video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.login{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    width: 500px;
+    padding: 40px;
+    transform: translate(-50%,-50%);
+    background-color: rgba(0, 0, 0, 0.169);
+    box-sizing: border-box;
+    box-shadow: 0 15PX 25PX rgba(0, 0,0, 0.6);
+    border-radius: 10px;
+}
+.login h2{
+    margin: 0 0 30px;
+    padding: 0;
+    color: #FFF;
+    text-align: center;
+}
+.login .name{
+    position: relative;
+}
+.login .name input{
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom:1px solid #fff ;
+    outline: none ;
+    background-color: transparent;
+}
+.login .name labeL{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #FFF;
+    pointer-events: none;
+    transition: .5s;
+}
+.login .name  input:focus ~ label,.login .name  input:valid ~ label{
+    top: -20PX;
+    left: 0;
+    color:#fff;
+    font-size: 12PX;
+    font-weight: 400;
+}
+.login form button {
+    position: relative;
+    display: inline-block;
+    padding: 8px ;
+    color: #FFF;
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 20px;
+    letter-spacing: 4px;
+    background-color: transparent;
+    border: none;
+}
+.login form button:hover{
+    background-color: #333335;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #fff,
+    0 0 5px #fff,
+    0 0 25px #fff,
+    0 0 100px #fff;
+}
+.login h4{
+    margin: 0 0 30px;
+    padding: 0;
+    color: #FFF;
+    text-align: center;
+}
